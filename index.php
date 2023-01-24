@@ -27,5 +27,9 @@
     $movie3 = new Movie('La Casa', 'Horror', 'Sam Raimi', '1981');
     $movie4 = new Movie('Big Fish - Le storie di una vita incredibile', 'Fantastico', 'Tim Burton', '2003');
 
-    
+    echo $movie1 -> buildHtml();
+    echo $movie2 -> buildHtml();
+    echo $movie3 -> buildHtml();
+    echo $movie4 -> buildHtml();
+
 ?>
