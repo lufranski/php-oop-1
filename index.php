@@ -13,6 +13,13 @@
             $this -> author = $author;
             $this -> releaseYear = $releaseYear;
         }
+
+        public function buildHtml(){
+            echo '<h1>Movie: ' . $this -> title . '</h1>'
+                . '<p>' . $this -> genre . '</p>'
+                . '<p>' . $this -> author. '</p>'
+                . '<p>' . $this -> releaseYear . '</p>';
+        }
     }
 
     $movie1 = new Movie('Il gigante di ferro', 'Animazione', 'Brad Bird', '1999');
@@ -20,8 +27,5 @@
     $movie3 = new Movie('La Casa', 'Horror', 'Sam Raimi', '1981');
     $movie4 = new Movie('Big Fish - Le storie di una vita incredibile', 'Fantastico', 'Tim Burton', '2003');
 
-    echo 'Movie: ' . $movie1 -> title . '<br>'
-        . $movie1 -> genre . '<br>'
-        . $movie1 -> author. '<br>'
-        . $movie1 -> releaseYear;
+    
 ?>
